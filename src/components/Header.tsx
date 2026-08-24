@@ -47,24 +47,12 @@ export default function Header({ currentPath }: HeaderProps) {
       >
         <div className="container-base flex items-center justify-between gap-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group shrink-0">
-            <div className="relative">
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-purple-700 to-purple-500 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-                <GraduationCap className="w-6 h-6 text-gold-400" />
-              </div>
-              <div className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-gold-400 border-2 border-white" />
-            </div>
-            <div className="hidden sm:block">
-              <div className="font-display font-bold text-sm text-purple-900 leading-tight">
-                Charles Workforce
-              </div>
-              <div className="font-display font-bold text-sm text-purple-900 leading-tight">
-                Readiness Foundation
-              </div>
-              <div className="text-[10px] font-bold uppercase tracking-[0.15em] text-gold-600 mt-0.5">
-                {ORG.tagline}
-              </div>
-            </div>
+          <Link to="/" className="shrink-0 group-hover:opacity-90 transition-opacity">
+            <img
+              src="/logo.jpeg"
+              alt="Charles Workforce Readiness Foundation"
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Nav */}

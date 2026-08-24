@@ -1,4 +1,4 @@
-import { GraduationCap, Heart, Facebook, Instagram, Linkedin, Twitter, MapPin, Mail } from 'lucide-react';
+import { Heart, Facebook, Instagram, Linkedin, Twitter, MapPin, Mail } from 'lucide-react';
 import { ORG, NAV_LINKS } from '@/data/content';
 import { Link } from '@/router';
 
@@ -34,17 +34,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-purple-600 to-purple-400 flex items-center justify-center">
-                <GraduationCap className="w-6 h-6 text-gold-400" />
-              </div>
-              <div>
-                <div className="font-display font-bold text-sm leading-tight">Charles Workforce</div>
-                <div className="font-display font-bold text-sm leading-tight">Readiness Foundation</div>
-              </div>
-            </div>
-            <div className="text-xs font-bold uppercase tracking-wider text-gold-400 mb-3">
-              {ORG.tagline}
+            <div className="mb-4">
+              <img
+                src="/logo.jpeg"
+                alt="Charles Workforce Readiness Foundation"
+                className="h-12 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-purple-200 text-sm leading-relaxed">
               Preparing young adults for the workforce through training, mentorship, career development, and employment pathways.
