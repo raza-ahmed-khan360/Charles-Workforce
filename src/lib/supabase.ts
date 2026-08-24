@@ -1,6 +1,8 @@
-import { createClient } from '@supabase/supabase-js';
+// Supabase is temporarily disabled.
+// The client is stubbed out so the app compiles without env vars.
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
-
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+export const supabase = {
+  from: (_table: string) => ({
+    insert: async (_data: unknown) => ({ error: null }),
+  }),
+} as const;
