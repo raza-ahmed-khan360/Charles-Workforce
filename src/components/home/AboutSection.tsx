@@ -1,31 +1,69 @@
+import { useRef } from 'react';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { IMAGES } from '@/data/content';
 import { Link } from '@/router';
 
 export default function AboutSection() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ['start end', 'end start'],
+  });
+
+  const smoothProgress = useSpring(scrollYProgress, { stiffness: 90, damping: 20 });
+  const imageY = useTransform(smoothProgress, [0, 1], ['-8%', '8%']);
+  const cardY = useTransform(smoothProgress, [0, 1], ['20px', '-30px']);
+  const badgeY = useTransform(smoothProgress, [0, 1], ['-25px', '25px']);
+
   return (
-    <section className="py-20 lg:py-28 bg-white">
+    <section ref={containerRef} className="py-20 lg:py-28 bg-white overflow-hidden">
       <div className="container-base">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Image */}
-          <div className="relative">
+          
+          {/* Parallax Image & Floating Accent Card */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.7 }}
+            className="relative"
+          >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-              <img
+              <motion.img
+                style={{ y: imageY, scale: 1.1 }}
                 src={IMAGES.about}
                 alt="Young adults collaborating in workforce development program"
                 className="w-full h-[440px] lg:h-[520px] object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-purple-950/30 to-transparent" />
             </div>
-            {/* Floating accent card */}
-            <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-purple-700 to-purple-500 text-white rounded-2xl p-6 shadow-xl max-w-[200px] hidden sm:block">
-              <div className="text-3xl font-display font-bold text-gold-400">18-24</div>
-              <div className="text-sm text-purple-100 mt-1">Empowering young adults across South Florida</div>
-            </div>
-            <div className="absolute -top-4 -left-4 w-20 h-20 rounded-2xl bg-gold-400/20 -z-0" />
-          </div>
 
-          {/* Text */}
-          <div>
+            {/* Parallax Floating accent card */}
+            <motion.div
+              style={{ y: cardY }}
+              className="absolute -bottom-6 -right-6 bg-gradient-to-br from-purple-800 to-purple-600 text-white rounded-2xl p-6 shadow-2xl max-w-[210px] hidden sm:block border border-white/20"
+            >
+              <div className="text-3xl font-display font-bold text-gold-400">18-24</div>
+              <div className="text-xs text-purple-100 mt-1 leading-snug">
+                Empowering young adults across South Florida
+              </div>
+            </motion.div>
+
+            {/* Parallax Top Badge */}
+            <motion.div
+              style={{ y: badgeY }}
+              className="absolute -top-4 -left-4 w-20 h-20 rounded-2xl bg-gold-400/20 -z-0"
+            />
+          </motion.div>
+
+          {/* Text Content */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-60px' }}
+            transition={{ duration: 0.7, delay: 0.15 }}
+          >
             <span className="section-eyebrow">About Us</span>
             <h2 className="font-display font-bold text-3xl sm:text-4xl lg:text-5xl text-purple-900 leading-tight mb-6 text-balance">
               About Charles Workforce Readiness Foundation
@@ -59,7 +97,8 @@ export default function AboutSection() {
               Learn More
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
-          </div>
+          </motion.div>
+
         </div>
       </div>
     </section>

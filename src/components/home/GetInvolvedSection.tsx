@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 import SectionHeading from '@/components/SectionHeading';
 import { INVOLVEMENT } from '@/data/programs';
 import { Link } from '@/router';
@@ -16,12 +17,17 @@ export default function GetInvolvedSection() {
 
         <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {INVOLVEMENT.map((option, i) => (
-            <div
+            <motion.div
               key={i}
-              className="group card p-7 hover:-translate-y-1 flex items-start gap-4"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-40px' }}
+              transition={{ duration: 0.5, delay: i * 0.12 }}
+              whileHover={{ y: -6 }}
+              className="group card p-7 flex items-start gap-4 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100"
             >
-              <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-purple-600 to-purple-400 flex items-center justify-center group-hover:from-gold-500 group-hover:to-gold-400 transition-all duration-300">
-                <option.icon className="w-6 h-6 text-white" />
+              <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-purple-700 to-purple-500 flex items-center justify-center group-hover:from-gold-500 group-hover:to-gold-400 transition-all duration-300 shadow-md">
+                <option.icon className="w-6 h-6 text-white group-hover:text-purple-950 transition-colors" />
               </div>
               <div>
                 <h3 className="font-display font-semibold text-lg text-purple-900 mb-1.5">
@@ -31,16 +37,22 @@ export default function GetInvolvedSection() {
                   {option.description}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
-        <div className="mt-12 text-center">
-          <Link to="/get-involved" className="btn-purple group">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mt-12 text-center"
+        >
+          <Link to="/get-involved" className="btn-purple group shadow-lg hover:shadow-xl">
             Volunteer / Get Involved
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

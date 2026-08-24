@@ -13,16 +13,16 @@ export default function Footer() {
     <footer className="bg-purple-950 text-white">
       {/* CTA Bar */}
       <div className="border-b border-white/10">
-        <div className="container-base py-10 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+        <div className="container-base py-8 sm:py-10 flex flex-col items-center gap-5 text-center sm:flex-row sm:justify-between sm:text-left">
           <div>
-            <h3 className="font-display font-bold text-2xl text-white">
+            <h3 className="font-display font-bold text-xl sm:text-2xl text-white">
               Ready to Become <span className="text-gold-400">Workforce Ready?</span>
             </h3>
             <p className="text-purple-200 text-sm mt-1">
               Take the first step toward your future today.
             </p>
           </div>
-          <div className="flex gap-3 flex-wrap justify-center">
+          <div className="flex gap-3 flex-wrap justify-center shrink-0">
             <Link to="/contact" className="btn-gold">Apply Today</Link>
             <Link to="/get-involved" className="btn-outline">Volunteer</Link>
           </div>
@@ -30,25 +30,26 @@ export default function Footer() {
       </div>
 
       {/* Main Footer */}
-      <div className="container-base py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Brand */}
-          <div className="lg:col-span-1">
+      <div className="container-base py-10 sm:py-12">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-2 lg:grid-cols-4">
+
+          {/* Brand — full width on mobile */}
+          <div className="col-span-2 lg:col-span-1">
             <div className="mb-4">
               <img
-                src="/logo.jpeg"
+                src="/logo.png"
                 alt="Charles Workforce Readiness Foundation"
-                className="h-12 w-auto brightness-0 invert"
+                className="h-16 sm:h-[80px] w-auto brightness-0 invert"
               />
             </div>
-            <p className="text-purple-200 text-sm leading-relaxed">
+            <p className="text-purple-200 text-sm leading-relaxed max-w-xs">
               Preparing young adults for the workforce through training, mentorship, career development, and employment pathways.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-display font-semibold text-white mb-4 text-sm uppercase tracking-wider">
+            <h4 className="font-display font-semibold text-white mb-4 text-xs uppercase tracking-wider">
               Explore
             </h4>
             <ul className="space-y-2.5">
@@ -64,7 +65,7 @@ export default function Footer() {
 
           {/* More Links */}
           <div>
-            <h4 className="font-display font-semibold text-white mb-4 text-sm uppercase tracking-wider">
+            <h4 className="font-display font-semibold text-white mb-4 text-xs uppercase tracking-wider">
               More
             </h4>
             <ul className="space-y-2.5">
@@ -85,9 +86,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact + Social */}
-          <div>
-            <h4 className="font-display font-semibold text-white mb-4 text-sm uppercase tracking-wider">
+          {/* Contact + Social — full width on mobile */}
+          <div className="col-span-2 sm:col-span-1 lg:col-span-1">
+            <h4 className="font-display font-semibold text-white mb-4 text-xs uppercase tracking-wider">
               Connect
             </h4>
             <div className="space-y-3 text-sm text-purple-200 mb-5">
@@ -117,7 +118,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-purple-300">
+        <div className="border-t border-white/10 mt-10 pt-6 flex flex-col items-center gap-2 text-center sm:flex-row sm:justify-between sm:text-left text-xs text-purple-300">
           <p>&copy; {new Date().getFullYear()} {ORG.name}. All rights reserved.</p>
           <div className="flex items-center gap-1.5">
             <Heart className="w-3 h-3 text-gold-400" />

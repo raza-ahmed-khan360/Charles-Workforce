@@ -39,19 +39,19 @@ export default function Header({ currentPath }: HeaderProps) {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${
           scrolled
-            ? 'bg-white/95 backdrop-blur-md shadow-lg py-2'
-            : 'bg-white/80 backdrop-blur-sm py-3'
+            ? 'shadow-lg py-2'
+            : 'py-3'
         }`}
       >
         <div className="container-base flex items-center justify-between gap-4">
           {/* Logo */}
           <Link to="/" className="shrink-0 group-hover:opacity-90 transition-opacity">
             <img
-              src="/logo.jpeg"
+              src="/logo.png"
               alt="Charles Workforce Readiness Foundation"
-              className="h-12 w-auto"
+              className="h-[80px] w-auto"
             />
           </Link>
 
