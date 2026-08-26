@@ -39,7 +39,7 @@ export default function Footer() {
               <img
                 src="/logo.png"
                 alt="Charles Workforce Readiness Foundation"
-                className="h-16 sm:h-[80px] w-auto brightness-0 invert"
+                className="h-16 sm:h-[100px] w-auto brightness-0 invert"
               />
             </div>
             <p className="text-purple-200 text-sm leading-relaxed max-w-xs">
@@ -102,6 +102,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex gap-3">
+              {/*
               {[Facebook, Instagram, Linkedin, Twitter].map((Icon, i) => (
                 <a
                   key={i}
@@ -113,6 +114,7 @@ export default function Footer() {
                   <Icon className="w-4 h-4" />
                 </a>
               ))}
+              */}
             </div>
           </div>
         </div>

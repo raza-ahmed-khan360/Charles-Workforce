@@ -65,7 +65,7 @@ export default function FounderSection() {
               className="text-center md:text-left"
             >
               <h3 className="font-display font-bold text-2xl lg:text-3xl text-purple-900 mb-2">
-                Charles Vallon
+                Charles C. Vallon
               </h3>
               <p className="text-gold-600 font-semibold text-sm uppercase tracking-wider mb-6">
                 Founder, Charles Workforce Readiness Foundation
@@ -73,22 +73,11 @@ export default function FounderSection() {
 
               <div className="space-y-4 text-gray-600 leading-relaxed text-base">
                 <p>
-                  Charles Vallon established the Foundation with a deep commitment to preparing
-                  young adults for employment, mentorship, career development, and economic
-                  opportunity throughout Miami-Dade County and South Florida.
+                  Charles C. Vallon is a dedicated entrepreneur, business owner, husband, father, and the visionary founder of the Charles Workforce Readiness Foundation. With a profound commitment to the community, he established the Foundation to prepare young adults for employment, mentorship, career development, and economic opportunity throughout Miami-Dade County and South Florida.
                 </p>
                 <p>
-                  Under his leadership, the Foundation is dedicated to helping young adults ages
-                  18-24 develop the practical skills, professional confidence, and career resources
-                  needed to transition successfully into the workforce.
+                  Guided by his personal philosophy—"I am here to HELP, not to HURT... Breathe in the positive and release the negative"—Charles leads the Foundation in helping young adults ages 18-24 develop practical skills, professional confidence, and the career resources needed to transition successfully into the workforce.
                 </p>
-              </div>
-
-              <div className="mt-6 inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-purple-100/60 border border-purple-200">
-                <div className="w-2 h-2 rounded-full bg-gold-500 animate-pulse" />
-                <span className="text-sm text-purple-900 font-medium">
-                  Founder biography coming soon.
-                </span>
               </div>
             </motion.div>
           </div>

@@ -70,7 +70,7 @@ export default function MissionVision({ variant }: MissionVisionProps) {
                 style={{ y: imageY, scale: 1.08 }}
                 src={content.image}
                 alt="Young adults engaged in workforce development activities"
-                className="w-full h-[420px] lg:h-[500px] object-cover"
+                className="w-full h-[420px] lg:h-[500px] object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-purple-950/40 via-transparent to-transparent" />
             </div>
