@@ -26,7 +26,7 @@ const CONTENT = {
       'Our vision is a community where every young adult has access to the knowledge, skills, resources, mentorship, and opportunities necessary to enter the workforce prepared, confident, and ready to succeed.',
     supporting:
       'We envision young adults overcoming barriers to employment, achieving economic independence, developing meaningful careers, and becoming future leaders within their communities.',
-    image: IMAGES.presentation,
+    image: IMAGES.vision,
     points: ['Economic Independence', 'Meaningful Careers', 'Future Leaders', 'Community Impact'],
     bgColor: 'bg-gradient-to-br from-purple-950 via-purple-900 to-purple-800',
   },

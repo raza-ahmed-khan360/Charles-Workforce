@@ -2,6 +2,7 @@ import { ArrowRight, CheckCircle2, Target, Eye, Users, Building2 } from 'lucide-
 import PageHero from '@/components/PageHero';
 import SectionHeading from '@/components/SectionHeading';
 import FounderSection from '@/components/home/FounderSection';
+import ExecutiveDirectorSection from '@/components/home/ExecutiveDirectorSection';
 import { IMAGES } from '@/data/content';
 import { Link } from '@/router';
 
@@ -19,7 +20,7 @@ export default function AboutPage() {
         eyebrow="About Us"
         title="About Charles Workforce Readiness Foundation"
         subtitle="Bridging the gap between young adults and meaningful employment opportunities in South Florida."
-        image={IMAGES.about}
+        image={IMAGES.aboutHero}
       />
 
       {/* Main About Section */}
@@ -29,7 +30,7 @@ export default function AboutPage() {
             <div className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src={IMAGES.collaboration}
+                  src={IMAGES.story}
                   alt="Young adults in workforce development program"
                   className="w-full h-[460px] lg:h-[540px] object-cover"
                 />
@@ -140,6 +141,7 @@ export default function AboutPage() {
       </section>
 
       <FounderSection />
+      <ExecutiveDirectorSection />
     </>
   );
 }

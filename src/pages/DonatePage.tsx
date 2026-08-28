@@ -12,7 +12,7 @@ export default function DonatePage() {
         eyebrow="Support Our Mission"
         title="Invest in Workforce Readiness. Invest in Their Future."
         subtitle="Your donation directly supports workforce-readiness programs and creates opportunities for young adults in South Florida."
-        image={IMAGES.collaboration}
+        image={IMAGES.donateHero}
       />
 
       {/* Why Donate */}
@@ -22,7 +22,7 @@ export default function DonatePage() {
             <div className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src={IMAGES.workshop2}
+                  src={IMAGES.donateFeature}
                   alt="Young adults in workforce training"
                   className="w-full h-[440px] lg:h-[520px] object-cover"
                 />

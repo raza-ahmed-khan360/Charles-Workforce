@@ -28,7 +28,7 @@ export const PROGRAMS: Program[] = [
     icon: Target,
     title: 'Career Coaching',
     description: 'Individual and group guidance designed to help young adults identify career interests, establish employment goals, and develop realistic career plans.',
-    image: 'https://images.pexels.com/photos/1181563/pexels-photo-1181563.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/1181469/pexels-photo-1181469.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     icon: FileText,
@@ -58,13 +58,13 @@ export const PROGRAMS: Program[] = [
     icon: Handshake,
     title: 'Internship & Job Placement Support',
     description: 'Connecting qualified participants with employment opportunities, internships, apprenticeships, and participating employers whenever available.',
-    image: 'https://images.pexels.com/photos/9301860/pexels-photo-9301860.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/936043/pexels-photo-936043.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     icon: Building2,
     title: 'Employer & Community Partnerships',
     description: 'Developing partnerships with businesses, community organizations, educational institutions, and workforce-development partners to expand opportunities for program participants.',
-    image: 'https://images.pexels.com/photos/6147022/pexels-photo-6147022.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/6340664/pexels-photo-6340664.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
 ];
 

@@ -34,7 +34,7 @@ export default function AboutSection() {
                 style={{ y: imageY, scale: 1.1 }}
                 src={IMAGES.about}
                 alt="Young adults collaborating in workforce development program"
-                className="w-full h-[440px] lg:h-[520px] object-cover"
+                className="w-full h-[440px] lg:h-[520px] object-cover object-top"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-purple-950/30 to-transparent" />
             </div>

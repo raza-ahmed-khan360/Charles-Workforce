@@ -39,7 +39,7 @@ export default function Footer() {
               <img
                 src="/logo.png"
                 alt="Charles Workforce Readiness Foundation"
-                className="h-16 sm:h-[100px] w-auto brightness-0 invert"
+                className="h-16 sm:h-[160px] w-auto brightness-0 invert"
               />
             </div>
             <p className="text-purple-200 text-sm leading-relaxed max-w-xs">

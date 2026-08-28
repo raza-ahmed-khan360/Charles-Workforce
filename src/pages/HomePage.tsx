@@ -5,6 +5,7 @@ import ProgramsSection from '@/components/home/ProgramsSection';
 import HowItWorks from '@/components/home/HowItWorks';
 import AboutSection from '@/components/home/AboutSection';
 import FounderSection from '@/components/home/FounderSection';
+import ExecutiveDirectorSection from '@/components/home/ExecutiveDirectorSection';
 import SuccessStories from '@/components/home/SuccessStories';
 import DonateSection from '@/components/home/DonateSection';
 import GetInvolvedSection from '@/components/home/GetInvolvedSection';
@@ -20,6 +21,7 @@ export default function HomePage() {
       <HowItWorks />
       <AboutSection />
       <FounderSection />
+      <ExecutiveDirectorSection />
       <SuccessStories />
       <DonateSection />
       <GetInvolvedSection />

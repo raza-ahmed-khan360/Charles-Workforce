@@ -12,7 +12,7 @@ export default function ProgramsPage() {
         eyebrow="Our Programs"
         title="Programs That Prepare Young Adults for Success"
         subtitle="Comprehensive workforce-readiness programs designed to equip participants with the skills, confidence, and connections they need to build sustainable careers."
-        image={IMAGES.training}
+        image={IMAGES.programsHero}
       />
 
       {/* Programs Grid */}

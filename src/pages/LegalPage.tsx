@@ -17,7 +17,7 @@ export default function LegalPage({ title, eyebrow, subtitle, children }: LegalP
         eyebrow={eyebrow}
         title={title}
         subtitle={subtitle}
-        image={IMAGES.collaboration}
+        image={IMAGES.legalHero}
       />
       <section className="py-16 lg:py-20 bg-white">
         <div className="container-base max-w-4xl">

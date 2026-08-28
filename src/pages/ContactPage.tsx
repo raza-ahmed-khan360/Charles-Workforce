@@ -13,7 +13,7 @@ export default function ContactPage() {
         eyebrow="Get Involved"
         title="Get Involved"
         subtitle="Whether you're a young adult ready to apply, a volunteer, mentor, employer, or donor — there's a place for you in our mission."
-        image={IMAGES.meeting}
+        image={IMAGES.contactHero}
       />
 
       {/* Get Involved Cards */}

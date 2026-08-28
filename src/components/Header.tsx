@@ -51,7 +51,7 @@ export default function Header({ currentPath }: HeaderProps) {
             <img
               src="/logo.png"
               alt="Charles Workforce Readiness Foundation"
-              className="h-[100px] w-auto"
+              className="h-[120px] w-auto"
             />
           </Link>
 

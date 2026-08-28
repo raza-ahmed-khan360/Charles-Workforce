@@ -11,7 +11,7 @@ export default function MissionVisionPage() {
         eyebrow="Our Purpose"
         title="Mission & Vision"
         subtitle="Guided by a clear mission and a bold vision for the future of young adults in South Florida."
-        image={IMAGES.presentation}
+        image={IMAGES.missionHero}
       />
 
       {/* Mission */}
@@ -21,7 +21,7 @@ export default function MissionVisionPage() {
             <div className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src={IMAGES.mission}
+                  src={IMAGES.missionPageMission}
                   alt="Mentoring session for workforce development"
                   className="w-full h-[440px] lg:h-[520px] object-cover"
                 />
@@ -104,7 +104,7 @@ export default function MissionVisionPage() {
             <div className="order-1 lg:order-2 relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl ring-4 ring-gold-400/20">
                 <img
-                  src={IMAGES.workshop}
+                  src={IMAGES.missionPageVision}
                   alt="Young adults in a workshop session"
                   className="w-full h-[440px] lg:h-[520px] object-cover"
                 />

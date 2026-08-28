@@ -31,7 +31,7 @@ export default function Hero() {
         <img
           src={IMAGES.hero}
           alt="Diverse young adults participating in workforce readiness training"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-[center_15%]"
         />
         <div className="absolute inset-0 bg-gradient-to-br from-purple-950/95 via-purple-900/85 to-purple-800/70" />
         <div className="absolute inset-0 bg-grid opacity-20" />
