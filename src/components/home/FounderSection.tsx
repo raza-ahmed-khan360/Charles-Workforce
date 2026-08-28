@@ -50,7 +50,7 @@ export default function FounderSection() {
                   style={{ y: portraitY, scale: 1.08 }}
                   src={IMAGES.founder}
                   alt="Charles Vallon, Founder"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-950/50 to-transparent" />
               </div>
