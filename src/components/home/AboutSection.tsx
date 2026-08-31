@@ -31,7 +31,7 @@ export default function AboutSection() {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <motion.img
-                style={{ y: imageY, scale: 1.1 }}
+                style={{ y: imageY, scale: 1 }}
                 src={IMAGES.about}
                 alt="Young adults collaborating in workforce development program"
                 className="w-full h-[440px] lg:h-[520px] object-cover object-top"
