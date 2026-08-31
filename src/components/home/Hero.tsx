@@ -87,7 +87,7 @@ export default function Hero() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="mt-6 text-lg sm:text-xl text-purple-100 leading-relaxed max-w-2xl"
             >
-              Charles Workforce Readiness Foundation empowers young adults ages 18-24 with the
+              Charles Workforce Readiness Foundation empowers young adults ages 17-24 with the
               skills, confidence, resources, mentorship, and career preparation needed to pursue
               gainful employment and long-term professional success.
             </motion.p>
@@ -137,7 +137,7 @@ export default function Hero() {
                   <CheckCircle className="w-6 h-6 text-purple-300" />
                 </div>
                 <div>
-                  <div className="font-display font-bold text-white text-lg">Ages 18-24</div>
+                  <div className="font-display font-bold text-white text-lg">Ages 17-24</div>
                   <div className="text-xs text-purple-200">Focused Empowerment</div>
                 </div>
               </div>

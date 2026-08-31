@@ -12,7 +12,7 @@ const CONTENT = {
     eyebrow: 'Our Mission',
     title: 'Our Mission',
     statement:
-      'The mission of Charles Workforce Readiness Foundation is to prepare and empower young adults ages 18-24 with the practical skills, professional development, mentorship, and career resources necessary to successfully transition into the workforce and obtain gainful employment.',
+      'The mission of Charles Workforce Readiness Foundation is to prepare and empower young adults ages 17-24 with the practical skills, professional development, mentorship, and career resources necessary to successfully transition into the workforce and obtain gainful employment.',
     supporting:
       'We are committed to helping young adults develop the confidence, knowledge, workplace readiness, and life skills necessary to build sustainable careers and become productive members of their communities.',
     image: IMAGES.mission,

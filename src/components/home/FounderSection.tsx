@@ -76,7 +76,7 @@ export default function FounderSection() {
                   Charles C. Vallon is a dedicated entrepreneur, business owner, husband, father, and the visionary founder of the Charles Workforce Readiness Foundation. With a profound commitment to the community, he established the Foundation to prepare young adults for employment, mentorship, career development, and economic opportunity throughout Miami-Dade County and South Florida.
                 </p>
                 <p>
-                  Guided by his personal philosophy—"I am here to HELP, not to HURT... Breathe in the positive and release the negative"—Charles leads the Foundation in helping young adults ages 18-24 develop practical skills, professional confidence, and the career resources needed to transition successfully into the workforce.
+                  Guided by his personal philosophy—"I am here to HELP, not to HURT... Breathe in the positive and release the negative"—Charles leads the Foundation in helping young adults ages 17-24 develop practical skills, professional confidence, and the career resources needed to transition successfully into the workforce.
                 </p>
               </div>
             </motion.div>

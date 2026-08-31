@@ -42,7 +42,7 @@ export default function MissionVisionPage() {
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-5 font-medium">
                 The mission of Charles Workforce Readiness Foundation is to prepare and empower
-                young adults ages 18-24 with the practical skills, professional development,
+                young adults ages 17-24 with the practical skills, professional development,
                 mentorship, and career resources necessary to successfully transition into the
                 workforce and obtain gainful employment.
               </p>

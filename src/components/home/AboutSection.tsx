@@ -44,7 +44,7 @@ export default function AboutSection() {
               style={{ y: cardY }}
               className="absolute -bottom-6 -right-6 bg-gradient-to-br from-purple-800 to-purple-600 text-white rounded-2xl p-6 shadow-2xl max-w-[210px] hidden sm:block border border-white/20"
             >
-              <div className="text-3xl font-display font-bold text-gold-400">18-24</div>
+              <div className="text-3xl font-display font-bold text-gold-400">17-24</div>
               <div className="text-xs text-purple-100 mt-1 leading-snug">
                 Empowering young adults across South Florida
               </div>

@@ -69,8 +69,8 @@ export default function PrivacyPage() {
 
       <LegalSection title="Children's Privacy">
         <p>
-          Our programs serve young adults ages 18-24. We do not knowingly collect personal
-          information from individuals under 18 through our website.
+          Our programs serve young adults ages 17-24. We do not knowingly collect personal
+          information from individuals under 17 through our website.
         </p>
       </LegalSection>
 

@@ -9,7 +9,7 @@ import { Link } from '@/router';
 export default function AboutPage() {
   const values = [
     { icon: Target, title: 'Mission-Driven', desc: 'Every program is designed to prepare young adults for the workforce.' },
-    { icon: Users, title: 'Community-Focused', desc: 'We serve young adults ages 18-24 across Miami-Dade County and South Florida.' },
+    { icon: Users, title: 'Community-Focused', desc: 'We serve young adults ages 17-24 across Miami-Dade County and South Florida.' },
     { icon: Building2, title: 'Partnership-Oriented', desc: 'We collaborate with employers, educators, and community organizations.' },
     { icon: Eye, title: 'Future-Looking', desc: 'We build pathways from preparation to long-term career success.' },
   ];
@@ -36,7 +36,7 @@ export default function AboutPage() {
                 />
               </div>
               <div className="absolute -bottom-6 -right-6 bg-gradient-to-br from-purple-700 to-purple-500 text-white rounded-2xl p-6 shadow-xl hidden sm:block">
-                <div className="text-3xl font-display font-bold text-gold-400">18-24</div>
+                <div className="text-3xl font-display font-bold text-gold-400">17-24</div>
                 <div className="text-sm text-purple-100 mt-1">Ages we serve</div>
               </div>
               <div className="absolute -top-4 -left-4 w-24 h-24 rounded-2xl bg-gold-400/20 -z-0" />
@@ -113,7 +113,7 @@ export default function AboutPage() {
                 to those who need them most.
               </p>
               <div className="grid grid-cols-2 gap-3 mb-8">
-                {['Miami-Dade County', 'South Florida', 'Ages 18-24', 'Workforce Development'].map((item, i) => (
+                {['Miami-Dade County', 'South Florida', 'Ages 17-24', 'Workforce Development'].map((item, i) => (
                   <div key={i} className="flex items-center gap-2.5">
                     <CheckCircle2 className="w-5 h-5 text-gold-500 shrink-0" />
                     <span className="text-sm font-medium text-gray-700">{item}</span>

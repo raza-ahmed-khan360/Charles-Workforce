@@ -27,7 +27,7 @@ export const ORG = {
   founder: 'Charles C. Vallon',
   executiveDirector: 'Tiffinay Cage',
   location: 'Miami-Dade County, South Florida',
-  audience: 'Young Adults Ages 18-24',
+  audience: 'Young Adults Ages 17-24',
 };
 
 export const NAV_LINKS = [
