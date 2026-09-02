@@ -3,6 +3,7 @@ import PageHero from '@/components/PageHero';
 import SectionHeading from '@/components/SectionHeading';
 import FounderSection from '@/components/home/FounderSection';
 import ExecutiveDirectorSection from '@/components/home/ExecutiveDirectorSection';
+import BoardSection from '@/components/home/BoardSection';
 import { IMAGES } from '@/data/content';
 import { Link } from '@/router';
 
@@ -142,6 +143,7 @@ export default function AboutPage() {
 
       <FounderSection />
       <ExecutiveDirectorSection />
+      <BoardSection />
     </>
   );
 }

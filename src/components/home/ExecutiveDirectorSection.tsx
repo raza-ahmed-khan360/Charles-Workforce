@@ -49,7 +49,7 @@ export default function ExecutiveDirectorSection() {
                 <motion.img
                   style={{ y: portraitY, scale: 1.08 }}
                   src={IMAGES.executiveDirector}
-                  alt="Tiffinay Cage, Executive Director"
+                  alt="Tiffinay Cage, Executive Director / Vice Chairman"
                   className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-950/50 to-transparent" />
@@ -68,7 +68,7 @@ export default function ExecutiveDirectorSection() {
                 Tiffinay Cage
               </h3>
               <p className="text-gold-600 font-semibold text-sm uppercase tracking-wider mb-6">
-                Executive Director, Charles Workforce Readiness Foundation
+                Executive Director / Vice Chairman, Charles Workforce Readiness Foundation
               </p>
 
               <div className="space-y-4 text-gray-600 leading-relaxed text-base">

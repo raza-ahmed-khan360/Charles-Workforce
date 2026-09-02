@@ -49,7 +49,7 @@ export default function FounderSection() {
                 <motion.img
                   style={{ y: portraitY, scale: 1.08 }}
                   src={IMAGES.founder}
-                  alt="Charles Vallon, Founder"
+                  alt="Charles C. Vallon, Founder / Chairman"
                   className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-950/50 to-transparent" />
@@ -68,7 +68,7 @@ export default function FounderSection() {
                 Charles C. Vallon
               </h3>
               <p className="text-gold-600 font-semibold text-sm uppercase tracking-wider mb-6">
-                Founder, Charles Workforce Readiness Foundation
+                Founder / Chairman, Charles Workforce Readiness Foundation
               </p>
 
               <div className="space-y-4 text-gray-600 leading-relaxed text-base">

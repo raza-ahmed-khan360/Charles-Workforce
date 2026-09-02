@@ -6,6 +6,9 @@ export const IMAGES = {
   about: '/images/team-img.jpeg',
   founder: '/images/founder-img.jpeg',
   executiveDirector: '/images/Executive-Director.jpeg',
+  president: '/images/President.jpeg',
+  cfo: '/images/Chief-Financial-Officer.jpeg',
+  secretary: '/images/Secretary.jpeg',
   story: '/images/meeting2.jpeg',
 
   // Dedicated unique page heroes & features (no repeats)
@@ -25,7 +28,9 @@ export const ORG = {
   shortName: 'Charles Workforce Readiness Foundation',
   tagline: 'Workforce Ready.',
   founder: 'Charles C. Vallon',
+  founderTitle: 'Founder / Chairman',
   executiveDirector: 'Tiffinay Cage',
+  executiveDirectorTitle: 'Executive Director / Vice Chairman',
   location: 'Miami-Dade County, South Florida',
   audience: 'Young Adults Ages 17-24',
 };
@@ -38,4 +43,36 @@ export const NAV_LINKS = [
   { label: 'Donate', path: '/donate' },
   { label: 'Get Involved', path: '/get-involved' },
   { label: 'Contact', path: '/contact' },
+];
+
+export interface BoardMember {
+  name: string;
+  role: string;
+  organization: string;
+  image: string;
+  bio: string;
+}
+
+export const BOARD_MEMBERS: BoardMember[] = [
+  {
+    name: 'Dr. Brian Crawford',
+    role: 'President / Director',
+    organization: 'Charles Workforce Readiness Foundation',
+    image: IMAGES.president,
+    bio: 'Dr. Brian Crawford serves as President and Director, overseeing day-to-day operations with a commitment to organizational excellence. He works closely with the team to implement strategic initiatives, strengthen the organization’s impact, and advance its mission and long-term goals.',
+  },
+  {
+    name: 'Beautisheka Jones',
+    role: 'Chief Financial Officer (CFO) / Director',
+    organization: 'Charles Workforce Readiness Foundation',
+    image: IMAGES.cfo,
+    bio: 'Beautisheka Jones serves as Chief Financial Officer and Director of the Charles Workforce Readiness Foundation, providing financial leadership and oversight of the Foundation’s fiscal operations. She supports budgeting, financial reporting, internal financial controls, and responsible stewardship of organizational resources while working with the Board to promote transparency, accountability, and long-term financial sustainability.',
+  },
+  {
+    name: 'Shandett Cage',
+    role: 'Secretary / Director',
+    organization: 'Charles Workforce Readiness Foundation',
+    image: IMAGES.secretary,
+    bio: 'Shandett Cage serves as Secretary and Director of the Charles Workforce Readiness Foundation, supporting effective governance and the overall administration of the Board. She is responsible for maintaining accurate organizational records, documenting board meetings and official actions, and supporting correspondence and compliance matters. As a Director, she also contributes to strategic decision-making and helps advance the Foundation’s mission and long-term goals.',
+  },
 ];
