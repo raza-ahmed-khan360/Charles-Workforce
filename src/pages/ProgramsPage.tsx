@@ -28,11 +28,11 @@ export default function ProgramsPage() {
           <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {PROGRAMS.map((program, i) => (
               <div key={i} className="group card overflow-hidden hover:-translate-y-1 flex flex-col">
-                <div className="relative h-52 overflow-hidden">
+                <div className="relative aspect-[3/2] overflow-hidden">
                   <img
                     src={program.image}
                     alt={program.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-purple-950/70 to-transparent" />
                   <div className="absolute top-4 left-4 w-11 h-11 rounded-xl bg-white/90 backdrop-blur flex items-center justify-center shadow-lg">

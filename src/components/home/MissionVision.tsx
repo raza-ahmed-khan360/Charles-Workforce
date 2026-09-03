@@ -41,8 +41,6 @@ export default function MissionVision({ variant }: MissionVisionProps) {
 
   const smoothProgress = useSpring(scrollYProgress, { stiffness: 90, damping: 20 });
   const imageY = useTransform(smoothProgress, [0, 1], ['-6%', '6%']);
-  const accent1Y = useTransform(smoothProgress, [0, 1], ['25px', '-25px']);
-  const accent2Y = useTransform(smoothProgress, [0, 1], ['-35px', '35px']);
 
   const content = CONTENT[variant];
   const isVision = variant === 'vision';
@@ -75,15 +73,6 @@ export default function MissionVision({ variant }: MissionVisionProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-purple-950/40 via-transparent to-transparent" />
             </div>
 
-            {/* Parallax Decorative accents */}
-            <motion.div
-              style={{ y: accent1Y }}
-              className={`absolute -bottom-5 ${isReversed ? '-left-5' : '-right-5'} w-24 h-24 rounded-2xl bg-gold-400 opacity-90 -z-0 shadow-lg`}
-            />
-            <motion.div
-              style={{ y: accent2Y }}
-              className={`absolute -top-5 ${isReversed ? '-right-5' : '-left-5'} w-32 h-32 rounded-full border-4 ${isVision ? 'border-gold-400/40' : 'border-purple-300'} -z-0`}
-            />
           </motion.div>
 
           {/* Text with Reveal */}

@@ -42,11 +42,11 @@ export default function ProgramsSection() {
               className="group card overflow-hidden flex flex-col shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200/60"
             >
               {/* Image */}
-              <div className="relative h-44 overflow-hidden">
+              <div className="relative aspect-[3/2] overflow-hidden">
                 <img
                   src={program.image}
                   alt={program.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-purple-950/80 via-purple-950/20 to-transparent" />
                 <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-white/90 backdrop-blur flex items-center justify-center shadow-lg group-hover:bg-gold-400 transition-colors">

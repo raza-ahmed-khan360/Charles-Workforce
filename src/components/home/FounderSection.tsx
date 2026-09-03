@@ -32,28 +32,30 @@ export default function FounderSection() {
             </h2>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-[280px_1fr] gap-8 lg:gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-[380px_1fr] lg:grid-cols-[420px_1fr] gap-8 lg:gap-16 items-center">
             {/* Parallax Portrait */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.7 }}
-              className="relative mx-auto md:mx-0"
+              className="relative mx-auto md:mx-0 w-full max-w-[450px] md:max-w-none"
             >
               <motion.div
                 style={{ rotate: rotateDeg }}
                 className="absolute inset-0 rounded-3xl bg-gradient-to-br from-gold-400 to-amber-500 shadow-xl"
               />
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl w-64 h-80 md:w-full md:h-96">
-                <motion.img
-                  style={{ y: portraitY, scale: 1.08 }}
+              <motion.div
+                style={{ y: portraitY }}
+                className="relative rounded-3xl overflow-hidden shadow-2xl w-full aspect-[3/4]"
+              >
+                <img
                   src={IMAGES.founder}
                   alt="Charles C. Vallon, Founder / Chairman"
                   className="w-full h-full object-cover object-top"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-950/50 to-transparent" />
-              </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-purple-950/40 via-transparent to-transparent pointer-events-none" />
+              </motion.div>
             </motion.div>
 
             {/* Content */}
@@ -68,7 +70,7 @@ export default function FounderSection() {
                 Charles C. Vallon
               </h3>
               <p className="text-gold-600 font-semibold text-sm uppercase tracking-wider mb-6">
-                Founder / Chairman, Charles Workforce Readiness Foundation
+                Founder/Chairman | Charles Workforce Readiness Foundation
               </p>
 
               <div className="space-y-4 text-gray-600 leading-relaxed text-base">
