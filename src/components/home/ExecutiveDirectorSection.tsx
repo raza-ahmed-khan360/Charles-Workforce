@@ -70,7 +70,7 @@ export default function ExecutiveDirectorSection() {
                 Tiffinay Cage
               </h3>
               <p className="text-gold-600 font-semibold text-sm uppercase tracking-wider mb-6">
-                Executive Director/ Vice Chairman | Charles Workforce Readiness Foundation
+                Realtor®
               </p>
 
               <div className="space-y-4 text-gray-600 leading-relaxed text-base">
